@@ -29,7 +29,7 @@ pipeline {
         stage('Run Application') {
             steps {
                 // Start the JAR application
-                sh 'java -jar target/MyMavenSeleniumApp04-1.0-SNAPSHOT.jar'
+                sh 'java -Dheadless=true -jar target/MyMavenSeleniumApp04-1.0-SNAPSHOT.jar'
             }
         }
 
